@@ -5,9 +5,9 @@ const error_box = document.querySelector('.error');
 const get_kyc_btn = document.querySelector('b');
 const btn = document.getElementById('btn');
 
-const kyc1 = ['3','3','6','6','5','7'];
-const kyc2 = ['1','1','4','9','1','2'];
-const kyc3 = ['6','6','3','9','2','1'];
+const kyc1 = ['5','8','9','5','5','7'];
+const kyc2 = ['7','5','4','9','1','2'];
+const kyc3 = ['9','0','9','9','2','1'];
 
 var u_input = [];
 var tryal_counter=0;
