@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root{
+    --blue: rgb(0, 75, 189);
+    --darkblue: rgb(0, 49, 122);
+    --myfont: "Gothic A1",sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+p{
+    font-size: .8rem;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+    font-family: var(--myfont);
+    box-sizing: border-box;
+}
+
+.formbox{
+    width: 400px;
+    height: auto;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(/images/cyberlock1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    overflow: hidden;
+    font-family: var(--my-font);
+    animation: popup 1s ease-in-out;
+}
+
+.formbox form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+.formbox form h2{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.formbox form .inputbox{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.formbox form .inputbox input,select{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding-left: 30px;
+    font-size: .9rem;
+    border-radius: 3px;
+}
+.formbox form .inputbox section option{
+    width: 100%;
+}
+.formbox form .inputbox input::placeholder{
+    font-size: .8rem;
+}
+.formbox form .inputbox label{
+    color: white;
+    align-self: flex-start;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 5px;
+}
+
+.formbox form .inputerror{
+    display: none;
+}
+
+.formbox form .btn{
+    margin-top: 10px;
+}
+.formbox form .btn input{
+    color: white;
+    padding-left: 0%;
+    background-color: var(--blue);
+    transition: .5s;
+}
+.formbox form .btn input:hover{
+    background-color: var(--valid);
+}
+
+.formbox form a p{
+    margin-top: 5px;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 1px 1px 1px var(--blue);
+    text-transform: capitalize;
+}
+.formbox form a{
+    text-decoration: none;
+}
+.formbox form #signup span{
+    color: var(--valid);
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 1px black;
+}
+
+.formbox form .checkbox{
+    flex-direction: row;
+    color: white;
+}
+.formbox form .checkbox input{
+    width: 20px;
+    margin-right: 20px;
+}
+
+@media (max-width:600px) {
+    .formbox{
+        width: 95vw;
+        height: auto;
+        top: 35%;
+    }
+    
+    .formbox form h2{
+        color: white;
+        text-shadow: 1px 1px 1px black;
+        font-size: 1.6rem;
+    }
+
+    .formbox form .inputbox input,select{
+        height: 30px;
+        padding-left: 20px;
+        font-size: .9rem;
+    }
+    .formbox form .inputbox input::placeholder{
+        font-size: .8rem;
+    }
+    .formbox form .inputbox label{
+        font-size: 1.1rem;
+    }
+    
+    .formbox form .btn{
+        margin-top:0;
+        height: 35px;
+    }
+    .formbox form .btn input{
+        padding-left: 0%;
+        height: 100%;
+    }
+    
+    .formbox form a p{
+        margin-top: 5px;
+        font-size: .9rem;
+        color: white;
+    }
+
+    .formbox form #signup span{
+        font-size: 1rem;
+    }
+}
+
+@keyframes popup {
+    from{
+        transform: translate(-50%,-50%) scale(0);
+    }
+    to{
+        transform: translate(-50%,-50%) scale(1);
+    }
+}

@@ -1,0 +1,404 @@
+:root{
+    --blue: rgb(0, 75, 189);
+    --darkblue: rgb(0, 49, 122);
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    font-family: var(--myfont);
+}
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: var(--blue);
+    position: fixed;
+    z-index: 99;
+}
+header .top{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+header .top a{
+    text-decoration: none;
+}
+
+header .top .logo{
+    width: 130px;
+    height: 70px;
+    padding: 5px;
+}
+header .top .logo:hover{
+    opacity: .7;
+}
+
+header .top .logo img{
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply;
+}
+
+header .top .logo a{
+    color: white;
+    text-align: center;
+    position: relative;
+}
+header .top .logo a h2{
+    margin-left: 20px;
+}
+header .top .logo a p{
+    color: white;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+header .top .logo a i{
+    position: absolute;
+    left: 17px;
+    top: 2px;
+    font-size: 1.5rem;
+    color: red;
+}
+
+header .nav-btns{
+    width: auto;
+    display: flex;
+    align-items: center;
+}
+
+header .nav-btns a button{
+    width: 80px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+header .nav-btns a button:hover{
+    width: 82px;
+    height: 32px;
+    font-size: .9rem;
+
+}
+header .nav-btns a button#signin{
+    color: white;
+    background-color: black;
+}
+header .nav-btns a button#signup{
+    background-color: white;
+}
+
+header .top .toggle-btn{
+    height: 100%;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none !important;
+    position: relative;
+}
+header .top .toggle-btn i{
+    position: absolute;
+    padding: 5px;
+    border: 1px solid var(--whitesmoke);
+    transition: .5s;
+    cursor: pointer;
+}
+
+header .bottom{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--darkblue);
+}
+
+header .bottom nav{
+    width: 70%;
+}
+
+header .bottom nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+header .bottom nav ul a{
+    text-decoration: none;
+}
+header .bottom nav ul a li{
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    position: relative;
+}
+header .bottom nav ul a:hover li::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--valid);
+    position: absolute;
+    bottom: -2px;
+    animation-name: show;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out;
+}
+
+.language-translate-container{
+    position: absolute;
+    top: 120px;
+    left: 0;
+}
+
+@media (max-width:600px) {
+    .language-translate-container{
+        position: absolute;
+        top:70px;
+    }
+}
+
+
+@keyframes show{
+    0%{
+        width: 1%;
+    }
+    
+    100%{
+        width: 100%;
+    }
+}
+
+@media (max-width:600px) {
+    header{
+        width: 100Vw;
+        padding: 0 5px;
+    }
+
+    header .top{
+        justify-content: space-between;
+        padding: 10px 0;
+        height: 70px;
+    }
+
+    header .top .logo{
+        width: 100px;
+        height: 60px;
+        padding: 0;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+    
+    header .top .logo a h2{
+        margin-left: .6rem;
+    }
+    header .top .logo a p{
+        font-size: .7rem;
+    }
+  
+    header .top .logo a i{
+        font-size: 1.5rem;
+        top: 0px;
+        left: 5px;
+    }
+
+    header .top .toggle-btn{
+        height: 100%;
+        display: block !important;
+    }
+
+    header .top .toggle-btn i{
+        font-size: 1rem;
+        left: -20px;
+        margin-top: 8px;
+        box-shadow: 0 0 3px 0.5px white;
+        padding: 0px;
+        border-radius: 5px;
+    }
+
+    header .nav-btns a button{
+        width: 55px;
+        height: 25px;
+        border-radius: 2px;
+        margin-right: 5px;
+        font-size: .7rem;
+    }
+
+    header .nav-btns a button:hover{
+        width: 57px;
+        height: 27px;
+        font-size: .8rem;
+
+    }
+
+    header .bottom{
+        display: none;
+    }
+}
+
+@media (min-width:601px) and (max-width:700px){
+    header .top{
+        padding: 0 20px;
+    }
+
+    header .top .logo{
+        width: 130px;
+        height: 60px;
+        padding: 0;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    header .top .logo a h1{
+        margin-left: 1rem;
+    }
+    header .top .logo a p{
+        font-size: .8rem;
+    }
+  
+    header .top .logo a i{
+        font-size: 1.5rem;
+        color: yellow;
+        top: 0px;
+        left: 5px;
+    }
+    
+    header .bottom nav ul a li{
+        font-size: 1rem;
+    }
+}
+@media (min-width:601px) and (max-width:900px){
+    
+    header .bottom nav{
+        width: 95%;
+    }
+}
+
+/* ************************************************************************************* */
+                             /* SIDE NAVIGATION */
+/* ************************************************************************************* */
+
+header .top .toggle-btn{
+    width: 5%;
+    height: 100%;
+    color: var(--whitesmoke);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .top .toggle-btn i{
+    position: absolute;
+    padding: 10px;
+    border: 1px solid var(--whitesmoke);
+    transition: .5s;
+    cursor: pointer;
+}
+
+/* side navigation links */
+aside{
+    height: 100vh;
+    width: 0vw;
+    background-color: var(--darkblue);
+    position: fixed;
+    margin-top: 0px;
+    z-index: 98;
+    transition: 1.2s;
+    margin-top: 110px;
+}
+
+aside.open{
+    /* width: 40vw; */
+    overflow: hidden;
+    width: 200px;
+}
+
+aside nav{
+    width: 100%;
+    height: auto;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+aside nav h2{
+    color: white;
+    font-size: 1.8rem;
+    padding: 30px;
+    text-wrap: nowrap;
+}
+
+aside nav ul{
+    width: 100%;
+}
+
+aside nav ul a li{
+    width: 100%;
+    height: auto;
+    list-style: none;
+    border-bottom: 1px solid blue;
+    text-wrap: nowrap;
+    padding: 15px 0;
+    font-size: 1.3rem;
+}
+aside nav ul a li.active{
+    color: var(--valid);
+}
+
+aside nav ul a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+aside nav a li i{
+    margin-right: 15px;
+    margin-left: 20px;
+}
+
+/* ***************MEDIA QUERY************* */
+@media screen and (max-width:600px) {
+
+    aside{
+        margin-top: 60px;
+    }
+
+    aside.open{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    aside nav h2{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    aside nav ul a li{
+        width: 100%;
+        padding: 15px 0;
+        font-size: .9rem;
+
+    }
+
+}
+/* ************************************************************************************* */
+                             /* SIDE NAVIGATION */
+/* ************************************************************************************* */

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root{
+
+    --White: #ffffff;
+    --whitesmoke: #f0eeee;
+    --black: black;
+    --darkGray: #232323;
+    --lightGray: #626262;
+    --my-font: "Gothic A1",sans-serif;
+    --orange: orange;
+    --navy-blue: #000020;
+    --valid: #00ff00;
+    --invalid: red;
+    --warning: yellow;
+    --blue: rgb(0, 75, 189);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    font-size: .8rem;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+    font-family: var(--my-font);
+    box-sizing: border-box;
+}
+
+.method-section{
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.method-section .methods{
+    width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 10px;
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(/images/cyberlock1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px var(--lightGray);
+}
+
+.method-section .methods h2{
+    color: white;
+    margin-bottom: 30px;
+}
+
+.method-section .methods button{
+    color: var(--navy-blue);
+    width: 330px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: white;
+    margin: 10px;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    transition: .5s;
+}
+.method-section .methods button:hover{
+    color: white;
+    background-color: var(--valid);
+}
+
+@media (max-width:600px) {
+    .method-section{
+        padding: 30px 0;
+        margin-top: 70px;
+    }
+    .method-section .methods{
+        width: 95vw;
+        height: auto;
+        padding: 40px 10px;
+    }
+    
+    .method-section .methods h2{
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .method-section .methods button{
+        color: var(--navy-blue);
+        height: 40px;
+        margin: 10px;
+        font-size: 1.1rem;
+    }
+}

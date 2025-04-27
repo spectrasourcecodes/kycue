@@ -1,0 +1,118 @@
+:root{
+    --blue: rgb(0, 75, 189);
+    --darkblue: rgb(0, 49, 122);
+    --myfont: sans-serif;
+    --valid: rgb(0, 255, 0);
+    --invalid: red;
+    --warning: yellow;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--blue);
+    font-family: var(--myfont);
+}
+
+.loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+
+.loader .out{
+    width: 100px;
+    height: 100px;
+    border: 5px solid var(--blue);
+    border-radius: 50%;
+    border-left: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: load .5s infinite ease-in-out;
+}
+
+.loader .out .in{
+    width: 70px;
+    height: 70px;
+    border: 5px solid var(--invalid);
+    border-radius: 50%;
+    border-right: 5px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: load .5s infinite ease-in-out;
+}
+
+.loader .out .in .logo{
+    width: 40px;
+    height: 40px;
+}
+.loader .out .in .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:600px) {
+
+    .loader{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        backdrop-filter: blur(2px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .loader .out{
+        width: 100px;
+        height: 100px;
+        border: 5px solid var(--blue);
+        border-radius: 50%;
+        border-left: 5px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: load .5s infinite ease-in-out;
+    }
+    
+    .loader .out .in{
+        width: 70px;
+        height: 70px;
+        border: 5px solid var(--invalid);
+        border-radius: 50%;
+        border-right: 5px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: load .5s infinite ease-in-out;
+    }
+    
+    .loader .out .in .logo{
+        width: 40px;
+        height: 40px;
+    }
+    .loader .out .in .logo img{
+        width: 100%;
+        height: 100%;
+    }
+    
+}
