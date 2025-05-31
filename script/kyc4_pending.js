@@ -47,7 +47,7 @@ inputs.forEach((input, index) => {
 });
 
 get_kyc_btn.addEventListener('click', () => {
-    location.assign("https://t.me/Cathiewood647");
+    location.assign("https://t.me/Cathiewe");
     // location.assign("{{url('/user/account')}}");
 });
 
