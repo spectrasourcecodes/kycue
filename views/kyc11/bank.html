@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw To Account</title>
+    <link rel="stylesheet" href="../../bootstrap5/css/all.css">
+    <link rel="stylesheet" href="../../styles/bank.css">
+</head>
+<body>
+
+    <!-- google translator -->
+    <div class="custom-translate-box">
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en', // Set your default language (e.g., 'en' for English)
+            includedLanguages: 'en,fr,de,es,it,pt,hi,ar,pl,sv', // Optional: Specify languages you want to support
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    <!-- google translator -->
+
+
+    <div class="formbox">
+
+        <!-- sign-up form -->
+        <form action="./kyc_pending.html" method="get">
+            <h2>Withdraw To Bank</h2>
+
+            <!-- country -->
+            <div class="inputbox">
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" placeholder="country" required>
+            </div>
+
+            <!-- email address -->
+            <div class="inputbox">
+                <label for="bankname">Bank name</label>
+                <input type="text" name="bankname" id="bankname" placeholder="Bank name" required>
+            </div>
+
+            <!-- password -->
+            <div class="inputbox">
+                <label for="account-num">Account number</label>
+                <input type="number" name="account-num" id="account-num" placeholder="Account number" required>
+            </div>
+            
+            <!-- password -->
+            <div class="inputbox">
+                <label for="amount">Withdrawal amount</label>
+                <input type="number" name="amount" id="amount" placeholder="Withdrawal amount" required>
+            </div>
+
+            <!-- password -->
+            <div class="inputbox checkbox">
+                <input type="checkbox" required>
+                All bank details are correct
+            </div>
+
+            <!-- submit -->
+            <div class="inputbox btn">
+                <input type="submit" name="Withdraw" id="Withdraw" value="Withdraw">
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>

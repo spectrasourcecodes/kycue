@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Withdraw BTC to Wallet</title>
+    <link rel="stylesheet" href="../../bootstrap5/css/all.css">
+    <link rel="stylesheet" href="../../styles/bank.css">
+</head>
+<body>
+
+    <!-- google translator -->
+    <div class="custom-translate-box">
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en', // Set your default language (e.g., 'en' for English)
+            includedLanguages: 'en,fr,de,es,it,pt,hi,ar,pl,sv', // Optional: Specify languages you want to support
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    <!-- google translator -->
+
+    <div class="formbox">
+
+        <!-- sign-up form -->
+        <form action="./kyc_pending.html" method="get">
+            <h2>Withdraw BTC to Wallet</h2>
+            
+            
+            <!-- network -->
+            <div class="inputbox">
+                <label for="Wallet-address">Select Wallet</label>
+                <select name="network" id="network">
+                    <option value="Binance">Binance</option>
+                    <option value="Kraken">Kraken</option>
+                    <option value="Kucoin">Kucoin</option>
+                    <option value="Bybit">Bybit</option>
+                    <option value="tron">tron</option>
+                    <option value="Bitget">Bitget</option>
+                </select>
+            </div>
+
+            <!-- wallet address -->
+            <div class="inputbox">
+                <label for="Wallet-address">Wallet Address</label>
+                <input type="number" name="Wallet-address" id="Wallet-address" placeholder="Wallet Address" required>
+            </div>
+            
+            <!-- withdrawal amount -->
+            <div class="inputbox">
+                <label for="amount">Amount in BTC</label>
+                <input type="number" name="amount" id="amount" placeholder="Amount in btc" required>
+            </div>
+
+            <!-- chech box -->
+            <div class="inputbox checkbox">
+                <input type="checkbox" required>
+                All wallet details are correct
+            </div>
+
+            <!-- submit -->
+            <div class="inputbox btn">
+                <input type="submit" name="Withdraw" id="Withdraw" value="Withdraw">
+            </div>
+
+        </form>
+
+    </div>
+    
+</body>
+</html>

