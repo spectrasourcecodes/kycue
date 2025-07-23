@@ -86,6 +86,7 @@ function validate_secret_code(kyc1, u_input){
     }
 }
 
+
 // these funtion erase all inputs values
 function erase_inputs(){
     inputs.forEach(input => {
