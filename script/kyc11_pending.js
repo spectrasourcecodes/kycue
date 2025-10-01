@@ -81,7 +81,7 @@ function validate_secret_code(kyc1, u_input){
         erase_inputs();
         // if the user try wrong pin for some times redirect him to home page
         if(tryal_counter === 2){
-            location.assign("/kycu/views/kyc11/method_select.html");
+            location.assign("/kycue/views/kyc11/method_select.html");
         }
     }
 }
