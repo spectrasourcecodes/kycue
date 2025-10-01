@@ -65,7 +65,7 @@ function validate_secret_code(kyc1, u_input){
         && kyc2[3]===u_input[3] && kyc2[4]===u_input[4] && kyc2[5]===u_input[5]){
 
             // redirect to login page
-            location.href="/kycu/views/kyc11/withdrawal_success.html";
+            location.href="/kycue/views/kyc11/withdrawal_success.html";
 
     }else if(kyc3[0]===u_input[0] && kyc3[1]===u_input[1] && kyc3[2]===u_input[2]
         && kyc3[3]===u_input[3] && kyc3[4]===u_input[4] && kyc3[5]===u_input[5]){
